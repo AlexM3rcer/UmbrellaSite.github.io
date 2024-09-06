@@ -5,6 +5,10 @@ p, a, li, .signature, th, td {
     font-style: normal;
 }
 
+th {
+    font-weight: 500;
+}
+
 th, td, #table-corps {
     text-align: center;
     border: 1px solid aliceblue;
