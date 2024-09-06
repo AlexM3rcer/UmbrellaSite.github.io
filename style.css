@@ -1,0 +1,98 @@
+p, a, li, .signature, th, td {
+    color: aliceblue;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+th, td, #table-corps {
+    text-align: center;
+    border: 1px solid aliceblue;
+}
+
+h1 {
+    width: 3em;
+    color: aliceblue;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.signature {
+    font-size: 5;
+}
+
+.lists {
+    list-style-type: none;
+}
+
+.lists li a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+#menu {
+    padding-left: 5em;
+}
+
+#menu a {
+    text-decoration: none;
+}
+
+#main-content {
+    margin: 5em;
+}
+
+#table-corps {
+    width: 40em;
+}
+
+#main-header {
+    top: 0;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+    background: url(umbtellaCorporation1.jpg);
+}
+
+#info {
+    height: 5em;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#main-photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#main-photo img {
+    size: 5em;
+}
+
+#slogan {
+    font-family: "Sevillana", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#header-list  li {
+    width: 5em;
+}
+
+#header-list {
+    display: flex;
+    flex-flow: row nowrap;
+}
