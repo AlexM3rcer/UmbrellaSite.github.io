@@ -15,34 +15,31 @@
     <title>Главная</title>
 </head>
 <body>
-    <a href="..\MainPage\index.html">Main page</a>
-    <form id="feedback-form">
-        <label><input type="text" id="name-form" name="name">Name</label>
-        <label><input type="text" id="email-form" name="email">Email</label>
-        <label for="from">From what</label>
-        
-        <div id="radio-buttons">
-            <label><input type="radio" id="from1-form" name="from">Employee</label>
-            <label><input type="radio" id="from2-form" name="from">Invitation</label>
-            <label><input type="radio" id="from3-form" name="from">Accidentally</label>
-        </div>
+    <a href="..\index.html">Main page</a>
+    <div id="background">
+        <form id="feedback-form">
+            <label><input type="text" id="name-form" name="name">Name</label>
+            <label><input type="text" id="email-form" name="email">Email</label>
+            <label for="from">From what</label>
+            
+            <div id="radio-buttons">
+                <label><input type="radio" id="from1-form" name="from">Employee</label>
+                <label><input type="radio" id="from2-form" name="from">Invitation</label>
+                <label><input type="radio" id="from3-form" name="from">Accidentally</label>
+            </div>
 
-        <select>
-            <option value="complaint">Complaint</option>
-            <option value="appeal">Appeal</option>
-        </select>
-        <label>Text</label>
-        <textarea name="text" id="textarea-form"></textarea>
-        
-        <label>Choose file</label>
-        <label>Agree</label>
-        •	ФИО (текстовое), 
-•	Email (текстовое),
-•	откуда узнали о нас (радио-кнопки), 
-•	тип обращения (жалоба/предложение, селектор), 
-•	текст сообщения (большое текстовое поле), 
-•	вложения (файл), 
-•	даю согласие на обработку персональных данных (чекбокс).
+            <select>
+                <option value="complaint">Complaint</option>
+                <option value="appeal">Appeal</option>
+            </select>
+            <label>Text</label>
+            <textarea name="text" id="textarea-form"></textarea>
 
-    </form>
+            <input type="file" id="file-form" name="file">
+
+            <label><input type="checkbox" id="checkbox-form" name="agree">Agree</label>
+            
+            <input type="submit" id="submit-form" name="submit" value="Submit">
+        </form>
+    </div>
 </body>
