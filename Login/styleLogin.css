@@ -1,0 +1,24 @@
+label, a {
+    color: aliceblue;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    width: 10em;
+    margin: 1em;
+}
+
+body {
+    background-image: url(logo.png);
+    background-size: cover;
+}
+
+button {
+    margin: 1em;
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+    width: 10em;
+    padding: 15% 30% 0 30%;
+}

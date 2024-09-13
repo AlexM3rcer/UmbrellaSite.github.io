@@ -1,0 +1,45 @@
+label, a, select {
+    color: aliceblue;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin: 1em;
+}
+
+select {
+    color: black;
+}
+
+body {
+    background-image: url(logo.png);
+    background-size: cover;
+}
+
+button {
+    margin: 1em;
+}
+
+textarea {
+    margin: 0 1em 1em 1em;
+    max-width: 15em;
+    max-height: 7em;
+}
+
+#feedback-form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 5% 30% 0 30%;
+}
+
+#feedback-form * {
+    width: 15em;
+}
+
+#from1-form, #from2-form, #from3-form {
+    width: 6em;
+}
+
+#radio-buttons {
+    margin-bottom: 1em;
+}
