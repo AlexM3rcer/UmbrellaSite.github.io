@@ -28,9 +28,8 @@ textarea {
 #feedback-form {
     display: flex;
     flex-direction: column;
-    padding: 5% 30% 0 30%;
-    background-image: url(..\Images\background.jpg);
-    background-size: cover;
+    margin: 5% 30% 0 30%;
+
 }
 
 #feedback-form * {

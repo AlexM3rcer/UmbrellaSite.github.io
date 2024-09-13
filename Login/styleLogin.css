@@ -20,7 +20,5 @@ body {
     display: flex;
     flex-direction: column;
     width: 10em;
-    padding: 15% 30% 0 30%;
-    background-image: url(..\Images\background.jpg);
-    background-size: cover;
+    margin: 15% 30% 0 30%;
 }
