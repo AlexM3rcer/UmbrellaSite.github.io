@@ -19,6 +19,9 @@ body {
 #login-form {
     display: flex;
     flex-direction: column;
-    width: 10em;
+    width: 14em;
     margin: 15% 30% 0 30%;
+    background-color: rgb(120, 22, 22);
+    border: 0.5em solid rgb(196, 22, 22);
+    border-radius: 1em;
 }

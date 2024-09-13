@@ -29,7 +29,14 @@ textarea {
     display: flex;
     flex-direction: column;
     margin: 5% 30% 0 30%;
+    width: 15em;
+    background-color: rgb(120, 22, 22);
+    border: 0.5em solid rgb(196, 22, 22);
+    border-radius: 1em;
+}
 
+#file-form {
+    width: 10000p;
 }
 
 #feedback-form * {
