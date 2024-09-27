@@ -1,0 +1,29 @@
+p, a, textarea {
+    color: aliceblue;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin: 1em;
+}
+
+textarea {
+    color: black;
+}
+
+body {
+    background-image: url(logo.png);
+}
+
+textarea {
+    margin: 0 1em 1em 1em;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#background {
+    margin: 5% 20% 0 20%;
+    padding: 2em;
+    background-color: rgb(120, 22, 22);
+    border: 0.5em solid rgb(196, 22, 22);
+    border-radius: 1em;
+}

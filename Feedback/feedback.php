@@ -29,18 +29,31 @@
         ?>
     </a>
     <div id="background">
-        <form id="feedback-form">
-            <label><input type="text" id="name-form" name="name">Name</label>
-            <label><input type="text" id="email-form" name="email">Email</label>
-            <label for="from">From what</label>
+        <form action="feedbacksend.php" method="POST" id="feedback-form" POST>
+            <?php 
+            echo '<label><input type="text" id="name-form" name="name" value='.$_GET['N'].'>Name</label>';
+            echo '<label><input type="text" id="email-form" name="email" value='.$_GET['E'].'.>Email</label>';
+            echo '<label for="from">From what</label>';
             
-            <div id="radio-buttons">
-                <label><input type="radio" id="from1-form" name="from">Employee</label>
-                <label><input type="radio" id="from2-form" name="from">Invitation</label>
-                <label><input type="radio" id="from3-form" name="from">Accidentally</label>
-            </div>
-
-            <select>
+            echo '<div id="radio-buttons">';
+                if ($_GET['S']=='employee') {
+                    echo '<label><input type="radio" id="from1-form" name="from" checked value="employee">Employee</label>';
+                } else {
+                    echo '<label><input type="radio" id="from1-form" name="from" value="employee">Employee</label>';
+                }
+                if ($_GET['S']=='invitation') {
+                    echo '<label><input type="radio" id="from2-form" name="from" checked value="invitation">Invitation</label>';
+                } else {
+                    echo '<label><input type="radio" id="from2-form" name="from" value="invitation">Invitation</label>';
+                }
+                if ($_GET['S']=='accidentally') {
+                    echo '<label><input type="radio" id="from3-form" name="from" checked value="accidentally">Accidentally</label>';
+                } else {
+                    echo '<label><input type="radio" id="from3-form" name="from" value="accidentally">Accidentally</label>';
+                }
+            echo '</div>';
+            ?>
+            <select name="text-type">
                 <option value="complaint">Complaint</option>
                 <option value="appeal">Appeal</option>
             </select>
