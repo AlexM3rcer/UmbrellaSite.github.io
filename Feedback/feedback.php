@@ -29,6 +29,17 @@
         ?>
     </a>
     <div id="background">
+        <?php
+        if (!($_GET['N'])) {
+            $_GET['N'] = '';
+        }
+        if (!($_GET['E'])) {
+            $_GET['E'] = '';
+        }
+        if (!($_GET['S'])) {
+            $_GET['S'] = '';
+        }
+        ?>
         <form action="feedbacksend.php" method="POST" id="feedback-form" POST>
             <?php 
             echo '<label><input type="text" id="name-form" name="name" value='.$_GET['N'].'>Name</label>';
