@@ -69,19 +69,25 @@
     </header>
 
     <main id="main-content">
-
         <?php
             include "..\db.php";
+            if ($_POST['name'] != '' && $_POST['url'] != '' && $_POST['description'] != '') {
+                $name = $_POST['name'];
+                $url = $_POST['url'];
+                $description = $_POST['description'];
+
+                mysqli_query($mysql, "INSERT INTO `terms`(`url`, `name`, `description`) VALUES ('$url', '$name', '$description')");
+            }
             $result = mysqli_query($mysql, "SELECT * FROM `terms`");
         ?>
 
-        <form action="feedbacksend.php" method="POST" id="feedback-form" POST>
+        <form action="information.php" method="POST" id="feedback-form" enctype="multipart/form-data">
 
             <label><input type="text" id="name-form" name="name">Термин</label>
 
-            <label><input type="text" id="name-form" name="name"> URL картинки</label>
+            <label><input type="text" id="url-form" name="url"> URL картинки</label>
 
-            <label><textarea name="text" id="textarea-form"></textarea>Описание</label>
+            <label><textarea name="description" id="textarea-form"></textarea>Описание</label>
             
 
             <input type="submit" id="submit-form" name="submit" value="Добавить">
@@ -92,9 +98,11 @@
                 while($name = mysqli_fetch_assoc($result)){
             ?>
             <div class="term">
-                <img  title="<?php echo $name['name'];?>" src="..\Images\<?php echo $name['url'];?>"/>
-                <h2><?php echo $name['name'];?></h2>
-                <p><?php echo $name['description'];?><p>
+                <img class="term-photo" title="<?php echo $name['name'];?>" src="..\Images\<?php echo $name['url'];?>.jpg"/>
+                <div class="term-text">
+                    <h2><?php echo $name['name'];?></h2>
+                    <p><?php echo $name['description'];?><p>
+                </div>
             </div>
             <?php
                 }
