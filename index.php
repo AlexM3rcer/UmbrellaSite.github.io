@@ -65,6 +65,22 @@
                     ?>
                 </a>
             </li>
+            <li>
+            <a href="<?php
+                    $name='Вычисления';
+                    $link='Calculations\calculations.php';
+                    $current_page=false;
+
+                    echo $link;
+
+                    ?>"><?php
+
+                    if( $current_page )
+                        echo ' class="selected_menu"';
+                        echo $name;
+                    ?>
+                </a>
+            </li>
         </ul>
     </header>
 
